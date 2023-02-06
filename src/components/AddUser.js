@@ -20,6 +20,7 @@ export const AddUser = () => {
     }
     addUser(newUser);
     navigate("/");
+    console.log(addUser);
   }
 
   const onChange = (e) => {

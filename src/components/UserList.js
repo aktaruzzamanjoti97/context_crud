@@ -22,7 +22,7 @@ export const UserList = () => {
                         <ListGroupItem className="d-flex justify-content-between" key={user.id}>
                             <strong>{user.name}</strong>
                             <div className="ml-auto">
-                                <Link to='' color="warning" className="btn btn-warning me-1">Edit</Link>
+                                <Link to={`/edit/${user.id}`} color="warning" className="btn btn-warning me-1">Edit</Link>
                                 <Button onClick={() => removeUser(user.id)} color="danger">Delete</Button>
                             </div>
                         </ListGroupItem>
