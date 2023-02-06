@@ -15,7 +15,6 @@ export const UserList = () => {
         <ListGroup className="mt-4">
             {loading ? (
                 <Skeleton />
-                // <h4 className="text-center">No Users</h4>
             ) : (
                 <>
                     {users.map(user => (

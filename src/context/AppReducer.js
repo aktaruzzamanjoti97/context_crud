@@ -36,6 +36,7 @@ export default (state, action) => {
                     return updateUser;
                 }
                 return user;
+                
             })
             return { ...state, users: updateUsers }
         default:
