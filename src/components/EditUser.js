@@ -12,7 +12,7 @@ export const EditUser = (props) => {
     let navigate = useNavigate();
     const params = useParams();
     const currentUserId = params.id;
-    console.log(typeof(currentUserId))
+    console.log(typeof (currentUserId))
 
     useEffect(() => {
         const userId = currentUserId;
@@ -42,7 +42,7 @@ export const EditUser = (props) => {
                 <Input type="text" value={selectedUser?.name} onChange={onChange} name="name" placeholder="Enter user" required></Input>
             </FormGroup>
             <Button type="submit">Edit Name</Button>
-            <Link to="/" className="btn btn-danger ml-2">Cancel</Link>
+            <Link to="/" className="btn btn-danger ms-2">Cancel</Link>
         </Form>
     );
 };
